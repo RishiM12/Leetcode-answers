@@ -33,11 +33,10 @@ class Solution
         //Code here
         int count=0;
         Node* x=head;
-        while(x->next!=NULL){
+        while(x!=NULL){
             count++;
             x=x->next;
         }
-        count++;
         return count;
     }
 };
