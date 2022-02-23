@@ -8,6 +8,8 @@ using namespace std;
  // } Driver Code Ends
 //User function template for C++
 
+
+//Moore's Voting Algorithm
 class Solution{
   public:
      // Function to find majority element in the array
