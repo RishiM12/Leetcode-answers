@@ -9,19 +9,6 @@ class Solution{
     void frequencyCount(vector<int>& arr,int N, int P)
     { 
         // code here
-        // for (int i=0;i<N;i++){
-        //     if (arr[i]>P) arr[i]=0;
-        //     else arr[i]=arr[i]-1;
-        // }
-        
-        // for (int i=0;i<N;i++){
-        //     int original=arr[i]%P;
-        //     arr[original]+=P;
-        // }
-        
-        // for (int i=0;i<N;i++){
-        //     arr[i]=arr[i]/P;
-        // }
         
         for(int i = 0; i < N; i++) {
             if(arr[i] > N)
