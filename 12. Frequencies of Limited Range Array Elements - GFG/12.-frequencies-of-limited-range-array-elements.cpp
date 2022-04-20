@@ -17,7 +17,8 @@ class Solution{
         
         for(int i = 0; i < N; i++) {
             if(arr[i]%(P+1) > 0)
-                arr[(arr[i]%(P+1))-1] += (P+1);
+                // arr[(arr[i]%(P+1))-1] += (P+1);
+                arr[arr[i]%(P+1)-1]+=1%(P+1)*(P+1);
         }
         
         for(int i = 0; i < N; i++) {
