@@ -21,12 +21,15 @@ class Solution{
         // Prefix sum part 2
         vector<int> temp(maxx+1000);
         for (int i=0;i<n;i++){
+            // Add 1 where range is starting        
             temp[L[i]]++;
+            // Add -1 after index where range is ending
             temp[R[i]+1]--;
         }
         
         int max=temp[0];
         int max_index=0;
+        // Find prefix sum array
         for (int i=1;i<maxx+1000;i++){
             temp[i]=temp[i]+temp[i-1];
             if (temp[i]>max){
