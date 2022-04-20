@@ -10,21 +10,19 @@ class Solution{
     { 
         // code here
         
-        unordered_map<int,int> m;
-        for (int i=0;i<N;i++){
-            m[i+1]=0;
+       for(int i = 0; i < N; i++) {
+            if(arr[i] > N)
+                arr[i] = 0;
         }
-        for (int i=0;i<N;i++){
-            if (arr[i]<=N){
-                m[arr[i]]++;
-            }
+        
+        for(int i = 0; i < N; i++) {
+            if(arr[i]%(P+1) > 0)
+                arr[(arr[i]%(P+1))-1] += (P+1);
         }
-        for (int i=0;i<N;i++){
-            arr[i]=m[i+1];
+        
+        for(int i = 0; i < N; i++) {
+            arr[i] /= (P+1);
         }
-        // for (auto x:m){
-        //     cout<<x.first<<" "<<x.second<<endl;
-        // }
     }
 };
 
