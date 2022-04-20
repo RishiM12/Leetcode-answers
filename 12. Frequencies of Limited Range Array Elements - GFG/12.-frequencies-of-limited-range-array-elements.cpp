@@ -9,7 +9,8 @@ class Solution{
     void frequencyCount(vector<int>& arr,int N, int P)
     { 
         // code here
-        
+        // Use the concept of saving two elements at one index
+        // Just keep adding 1 at the index 
        for(int i = 0; i < N; i++) {
             if(arr[i] > N)
                 arr[i] = 0;
